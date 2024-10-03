@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About page</title>
+        <body style="background-color: rgb(0, 0, 0);">
+        </body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+p.double {border-style: double;}
+p.outset {border-style: outset;}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: antiquewhite;font-family: fantasy;font-weight: lighter;">About</h1>
+  <p style="color: antiquewhite;font-style: italic;" >All about Anime Haven</p>
+</div>
+
+
+<div class="row">
+  <div class="column side">
+    <center>
+    <h2 class="outset" style="color: antiquewhite;" ><u>Locations</u></h2>
+    </center>
+    <p class="double" style="color: antiquewhite;">You can find our stores in any city near you as well as our online store. 
+        <br>Our mission is to make all of our products accesible to everyone so that they can indulge themselves in the world
+        of anime.
+        <br> Our opening hours are: <br>
+        9-6 Monday to Friday<br>
+        10-5 Saturday and Sunday
+        <br>We are only closed one week of the year: 
+        <br>Christmas Day until the New Year
+    </p>
+  </div>
+  
+  <div class="column middle">
+    <center>
+    <h2 class="outset" style="color: antiquewhite;"><u>About Anime Haven</u></h2>
+    </center>
+    <p class="double" style="color: antiquewhite;">Anime Haven was founded a few years ago to offer a place for fellow anime nerds and enthuasists to shop and 
+        indulge themselves in the world of anime. We want to give people a place that is affordable for people to shop in as well
+        as give them a wide range of brands and items to chose from.
+    </p>
+    <p class="double" style="color: antiquewhite;">We sell a range of products from clothing to manga to figures. All of us here at Anime Haven know that people 
+        like us like to collect objects in relation to our favourite anime shows so we try our best to cover all shows, popular and 
+        niche, to widen our customer pool and to make our store accessible to all anime fans. We sell collectibles from One Piece, Naruto, 
+        Attack on Titan and many more. We have shojo, shounen, horror, comedy and all genres. The next time you are in our store you 
+        might find your new favourite show or manga!
+    </p>
+  </div>
+  
+  <div class="column side">
+    <center>
+    <h2 class="outset" style="color: antiquewhite;"><u>Payment and Products</u></h2>
+    </center>
+    <p class="double" style="color: antiquewhite;">Any payments made in store can be done either by cash or card. We like to offer as many options of payment as possible to make
+        our stores avaliable to everyone. You can also purchase gift cards only in store
+    </p>
+        <p class="double" style="color: antiquewhite;">All of our products are strictly while stocks lasts and our prices are subject to change depending on demand. Anime Haven
+        cannot be held responsible for any changes of prices from products due to supplier's
+        </p>
+  </div>
+</div>
+
+<p align= center>
+    <img src="https://cdn.pixabay.com/photo/2024/06/14/03/04/metro-8828747_960_720.png">
+  </p>
+
+    </body>
+</html>
