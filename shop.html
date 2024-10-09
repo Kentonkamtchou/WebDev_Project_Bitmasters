@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Sofia's Anime Haven | Shop</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" type="image/png" href="CAT FAVICON.png">
+        <link rel="stylesheet" href="background.css">
+    </head>
+    
+    <body>
+        <div class="top-nav-bar">
+            <center>
+                <a href="index.html">Home</a>
+                <a class="active" href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </center>
+        </div>
+
+
+        <style>
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .intro {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .products {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            .product-item {
+                background-color: rgb(129, 17, 17);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+            .product-item:hover {
+                transform: scale(1.05);
+            }
+            .product-item img {
+                width: 100%;
+                height: auto;
+            }
+            .product-details {
+                padding: 15px;
+            }
+            .product-details h3 {
+                margin-top: 0;
+                font-size: 1.4rem;
+            }
+            .product-details p {
+                color: #777;
+                font-size: 1rem;
+            }
+            .product-details .price {
+                color: #ff4d6d;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+    
+            footer p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+    
+    
+    
+        <div class="container">
+            <section class="intro">
+                <h2 style="color:antiquewhite;">⛩️ <ins> Welcome to Anime Haven Shop</ins> ⛩️</h2>
+                <p style="color: antiquewhite;">A world of exclusive anime merchandise, from a variety of figurines, posters, keychains and more! Whether you're a fan of OG shows like Naruto and Dragon Ball Z or New Gen like My Hero Academia, we have something for every otaku show out there!</p>
+            </section>
+    
+            <section id="shop" class="products">
+                <div class="product-item">
+                    <a><img height = "30px" src="./images/NARUTO SAGE MODE.PNG"></a>
+                    <div class="product-details">
+                        <h3 style="color:rgb(226, 214, 214);">Sage Mode Naruto Figurine</h3>
+                        <p>High-quality figurine of Naruto doing Rasen Shuirken </p>
+                        <p class="price">€50.00</p>
+                    </div>
+                </div>
+    
+                <div class="product-item">
+                    <a><img height = "30px" src="./images/AOT RUMBLING.PNG"></a>
+                    <div class="product-details">
+                        <h3 style="color:rgb(226, 214, 214);">Attack on Titan Poster</h3>
+                        <p>A large, vibrant poster of the Rumbling during the final season!</p>
+                        <p class="price">€15.89</p>
+                    </div>
+                </div>
+    
+                <div class="product-item">
+                    <a><img height = "30px" src="./images/DEKU AND FRIENDS.PNG"></a>
+                    <div class="product-details">
+                        <h3 style="color: antiquewhite;">Hero Academia Hoodie</h3>
+                        <p>Comfortable and stylish hoodie featuring Deku and friends.</p>
+                        <p class="price">€25.76</p>
+                    </div>
+                </div>
+    
+                <div class="product-item">
+                    <a><img height = "30px" src="./images/DBZ KEYCHAIN.PNG"></a>
+                    <div class="product-details">
+                        <h3 style="color: antiquewhite;">Dragon Ball Super Keychain</h3>
+                        <p>Show off your love for DBS with this awesome keychain.</p>
+                        <p class="price">€10.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+    
+    </body>
+</html>
