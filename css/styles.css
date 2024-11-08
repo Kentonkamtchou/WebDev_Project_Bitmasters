@@ -83,6 +83,37 @@
     opacity: 0.9;
 }
 
+body {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        margin: 15px;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    
+    header, footer {
+        padding: 15px;
+    }
+}
+
+
 .btn:hover{
     opacity: 1;
 }
