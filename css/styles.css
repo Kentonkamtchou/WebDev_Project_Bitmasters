@@ -83,10 +83,41 @@
     opacity: 0.9;
 }
 
-@media only screen and (min-width: 600px) {
-    
-  }
-  @media only screen and (min-width: 768px) {
-    
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 25px;
   }
 
+  body {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sidebar {
+    display: none; /* Hides sidebar for simpler tablet layout */
+  }
+
+  .content {
+    width: 100%;
+  }
+}
