@@ -81,23 +81,12 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-@media only screen and (max-width: 599px) {
-    body {
-        font-size: 14px;
-        margin: 10px;
-    }
-    .container {
-        width: 100%;
-    }
-    header, footer {
-        padding: 10px;
-        text-align: center;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    .sidebar {
-        display: none;
-    }
 }
+
+@media only screen and (min-width: 600px) {
+    
+  }
+  @media only screen and (min-width: 768px) {
+    
+  }
+
