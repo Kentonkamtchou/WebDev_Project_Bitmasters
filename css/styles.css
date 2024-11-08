@@ -81,39 +81,23 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-}
-
-body {
-    font-size: 18px;
-    margin: 20px;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-header, footer {
-    padding: 20px;
-    text-align: center;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (max-width: 599px) {
     body {
-        font-size: 16px;
-        margin: 15px;
+        font-size: 14px;
+        margin: 10px;
     }
-    
     .container {
-        width: 90%;
+        width: 100%;
     }
-    
     header, footer {
-        padding: 15px;
+        padding: 10px;
+        text-align: center;
     }
-}
-
-
-.btn:hover{
-    opacity: 1;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .sidebar {
+        display: none;
+    }
 }
