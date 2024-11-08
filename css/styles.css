@@ -1,3 +1,4 @@
+@media only screen and (min-width: 600px) {
 .top-nav-bar {
     background-color: #2F2F2F;
     overflow: hidden;
@@ -83,16 +84,8 @@
     opacity: 0.9;
 }
 
-@media only screen and (max-width: 600px){
-    .top-nav-bar
-    .btn
-    .btn:hover
-    .contact-content
-    .icon
-    .input-container
-    .input-field
-    .socials-panel{
-        visibility: visible;
-    }
+.btn:hover{
+    opacity: 1;
+}
 
 }
