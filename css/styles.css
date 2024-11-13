@@ -21,6 +21,8 @@
 .top-nav-bar a:hover {
     background-color: rgb(66, 73, 67);
     box-shadow: 0 4px 8px rgba(2, 81, 239, 0.926);
+    transition: 2s;
+    box-shadow: 1px;
 }
 
 .top-nav-bar a.active {
