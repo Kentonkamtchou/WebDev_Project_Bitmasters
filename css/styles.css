@@ -109,41 +109,36 @@
 
 * {box-sizing:border-box;}
 
-.input-container {
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.icon{
-    padding: 10px;
-    background: black;
+.form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    min-width: 50px;
     text-align: center;
 }
 
-.input-field{
-    width: 100%;
-    padding: 10px;
+.input-container{
+    padding: 16px;
+    /*background-color: white;*/
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
     outline: none;
 }
 
-.input-field :focus{
-    border: 2px solid black;
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
 
-.btn{
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-.btn:hover{
+.registerbtn:hover{
     opacity: 1;
 }
 
+a{
+    color: dodgerblue;
+}
+
+.signin{
+    background-color: #f1f1f1;
+    text-align: center;
+}
