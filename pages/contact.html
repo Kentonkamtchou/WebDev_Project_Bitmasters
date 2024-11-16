@@ -9,6 +9,13 @@
         <link rel="icon" type="image/png" href="../images/CAT_FAVICON.png">
         <link rel="stylesheet" href="../css/background.css">
     </head>
+
+    
+    <header>
+        <center>
+            <h1 style="color:rgb(228, 43, 10); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;"><p><ins><i>Anime Haven</i></ins>😇</p></h1>
+        </center>
+    </header>
     
     <body>
         <div class="top-nav-bar">
@@ -20,8 +27,6 @@
             </center>
         </div>
 
-        
-
         <center>
             <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;font-weight: lighter;"><ins>Contacts</ins>
             </h1>
@@ -30,9 +35,10 @@
         <br>
 
         <div class="contact-content">
-            <box-shadow: align= left>
-                <img align = left src="../images/S.M_PC.gif" height="200px">
+            <p>
+                <img id="contact-img" src="../images/S.M_PC.gif" height="200px">
                 <h3 style="color: antiquewhite; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">We love hearing from you! If you have questions, feedback, or just want to share your shopping experience, don’t hesitate to reach out. Connect with us on our social media platforms, or give us a call — we’re here to help! For business enquiries, please send us an e-mail. Your thoughts are invaluable in making our community even better, so let’s chat!</h3>
+            </p>
         </div>
 
         <br><br><br><br><br><br><br>
@@ -44,9 +50,6 @@
                     <a><img height = "30px" src="../images/telephone.png">085 284 9721</a>
                     <a><img height = "30px" src="../images/instagram.png">@sofia_animehaven</a>
                     <a><img height = "30px" src="../images/facebook.png">@AnimeHavenMartinez</a>
-
-                    <br><br>
-                    
                     <a><img height = "30px" src="../images/pinterest.png">anime_haven_sofia</a>
                 </p>
             </center>
@@ -54,36 +57,33 @@
 
         <br><br><br><br>
 
-        <form action="purchase.html" method="POST">
-
-            
-            <div class="form">    
-    <form action="/action_page.php">
+        <form action="/action_page.php">
         <center>
-        <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><ins>Register Form</ins></h2>
+        <h2 style="color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><ins>Register Form</ins></h2>
         </center>
         <div class="input-container">
-            <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Register</h1>
-            <p style="color: antiquewhite;">Please fill out this form to create an account</p>
-            <hr>
-
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-            <hr>
-            <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
-            
-            <button style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" type="submit" class="registerbtn">Register</button>
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm">
         </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="psw">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Message" name="message">
+        </div>
+
+        <button type="submit" class="btn">Register</button>
     </form>
-    </div>
-        
-        
+            
+    
     </body>
 </html>
-
