@@ -52,6 +52,9 @@
                     <a><img height = "30px" src="../images/telephone.png">085 284 9721</a>
                     <a><img height = "30px" src="../images/instagram.png">@sofia_animehaven</a>
                     <a><img height = "30px" src="../images/facebook.png">@AnimeHavenMartinez</a>
+
+                    <br><br>
+
                     <a><img height = "30px" src="../images/pinterest.png">anime_haven_sofia</a>
                 </p>
             </center>
@@ -59,32 +62,33 @@
 
         <br><br><br><br>
 
-        <form action="/action_page.php">
+        <form action="purchase.html" method="POST">
+
+            
+            <div class="form">    
         <center>
-        <h2 style="color: white;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><ins>Register Form</ins></h2>
+        <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><ins>Register Form</ins></h2>
         </center>
         <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Username" name="usrnm">
-        </div>
+            <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Register</h1>
+            <p style="color: antiquewhite;">Please fill out this form to create an account</p>
+            <hr>
 
-        <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Email" name="email">
-        </div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-        <div class="input-container">
-            <i class="fa fa-key icon"></i>
-            <input class="input-field" type="password" placeholder="Password" name="psw">
-        </div>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-        <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Message" name="message">
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
+            
+            <button style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" type="submit" class="registerbtn">Register</button>
         </div>
-
-        <button type="submit" class="btn">Register</button>
     </form>
+    </div>
             
     
     </body>
