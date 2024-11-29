@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +7,86 @@
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="icon" type="image/png" href="../images/CAT_FAVICON.png">
         <link rel="stylesheet" href="../css/background.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #222;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background: #333;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            h1, h2 {
+                color: #ffc107;
+            }
+
+            label {
+                display: block;
+                margin: 15px 0 5px;
+                text-align: left;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            input, select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #FFD700
+                ;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #17613d
+            }
+
+            button:hover a{
+                color:antiquewhite;
+            }
+
+            #buttontext {
+                color:#222;
+            }
+
+            .error-message {
+                color: red;
+                font-style: italic;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
 
-    
     <header>
         <center>
-            <h1 style="color:rgb(228, 43, 10); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;"><p><ins><i>Anime Haven</i></ins>😇</p></h1>
+            <h1 style="color:rgb(228, 43, 10); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;">
+                <p><ins><i>Anime Haven</i></ins>😇</p>
+            </h1>
         </center>
     </header>
-    
+
     <body>
         <div class="top-nav-bar">
             <center>
@@ -30,72 +100,132 @@
         <br>
 
         <center>
-            <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;font-weight: lighter;"><ins>Contacts</ins>
+            <h1 style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-style: italic;font-weight: lighter;">
+                <ins>Contacts</ins>
             </h1>
         </center>
-        
-        <br>
 
+        <br>
+        
         <div class="contact-content">
             <p>
                 <img id="contact-img" src="../images/S.M_PC.gif" height="200px">
-                <h3 style="color: antiquewhite; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">We love hearing from you! If you have questions, feedback, or just want to share your shopping experience, don’t hesitate to reach out. Connect with us on our social media platforms, or give us a call — we’re here to help! For business enquiries, please send us an e-mail. Your thoughts are invaluable in making our community even better, so let’s chat!</h3>
+                <h4 style="color: antiquewhite; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    We love hearing from you! If you have questions, feedback, or just want to share your shopping experience, don’t hesitate to reach out. Connect with us on our social media platforms, or give us a call — we’re here to help! For business enquiries, please send us an e-mail. Your thoughts are invaluable in making our community even better, so let’s chat!
+                </h4>
             </p>
         </div>
+        
 
         <br><br><br><br><br><br><br>
-        
+
         <div class="socials-panel">
             <center>
                 <p style="color: antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                    <a><img height = "30px" src="../images/gmail.png">sofia.animehaven@gmail.com</a>
-                    <a><img height = "30px" src="../images/telephone.png">085 284 9721</a>
-                    <a><img height = "30px" src="../images/instagram.png">@sofia_animehaven</a>
-                    <a><img height = "30px" src="../images/facebook.png">@AnimeHavenMartinez</a>
-
+                    <a><img height="30px" src="../images/gmail.png">sofia.animehaven@gmail.com</a>
+                    <a><img height="30px" src="../images/telephone.png">085 284 9721</a>
+                    <a><img height="30px" src="../images/instagram.png">@sofia_animehaven</a>
+                    <a><img height="30px" src="../images/facebook.png">@AnimeHavenMartinez</a>
                     <br><br>
-
-                    <a><img height = "30px" src="../images/pinterest.png">anime_haven_sofia</a>
+                    <a><img height="30px" src="../images/pinterest.png">anime_haven_sofia</a>
                 </p>
             </center>
         </div>
 
         <br><br><br><br>
 
-        <form action="purchase.html" method="POST">
+        <form action="purchase.html" method="POST" onsubmit="return validateForm()">
+            <center>
+                <h1 style="color:antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                    <ins>Register Form</ins>
+                </h1>
+            </center>
+        
+            <div class="input-container">
+                <h1 style="color:antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Register</h1>
+                <p style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Please fill out this form to create an account</p>
+                <hr>
+        
+                <label for="name"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Name</a></label>
+                <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+        
+                <label for="email"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Email</a></label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        
+                <label for="phonenumber"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Phone Number</a></label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter Phone Number" 
+                       maxlength="10" 
+                       pattern="[0-9]{10}" 
+                       oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                       required>
+                <p id="phone-error" class="error-message"></p>
+        
+                <label for="psw"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Password</a></label>
+                <input type="password" id="psw" name="psw" placeholder="Enter Password" required>
+        
+                <label for="psw-repeat"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Repeat Password</a></label>
+                <input type="password" id="psw-repeat" name="psw-repeat" placeholder="Repeat Password" required>
+                <p id="password-error" class="error-message"></p>
+        
+                <label for="contact-method"><a style="color: antiquewhite;font-family: 'Trebuchet MS', Arial, sans-serif;">Preferred Contact Method</a></label>
+                <select id="contact-method" name="contact-method" required onchange="updateContactMethod()">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="Email">Email</option>
+                    <option value="SMS">SMS</option>
+                </select>
+                <p id="contact-message"></p>
+        
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
+        
+                <button type="submit"><a>Register</a></button>
+            </div>
+        </form>
+        
+        <script>
+            function validateForm() {
+                const password = document.getElementById("psw").value;
+                const repeatPassword = document.getElementById("psw-repeat").value;
+                const passwordError = document.getElementById("password-error");
+        
+                if (password !== repeatPassword) {
+                    passwordError.textContent = "Passwords Do Not Match. Please Try Again.";
+                    return false;
+                } else {
+                    passwordError.textContent = ""; 
+                }
+        
+                const phone = document.getElementById("phonenumber").value;
+                const phoneError = document.getElementById("Phone-Error");
+        
+                if (phone.length !== 10) {
+                    phoneError.textContent = "Phone Number Must Be Exactly 10 Digits.";
+                    return false; 
+                } else {
+                    phoneError.textContent = ""; 
+                }
+        
+                return true; 
 
-    <div class="form">    
-    <form action="/action_page.php">
-        <center>
-        <h2 style="color:antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><ins>Register Form</ins></h2>
-        </center>
-        <div class="input-container">
-            <h1 style="color:antiquewhite;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Register</h1>
-            <p style="color: antiquewhite;">Please fill out this form to create an account</p> 
-            <hr>
+            }
 
-            <label for="name"><b>Full Name</b></label>
-            <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
-            
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-            <label for="phonenumber"><b>Phone Number</b></label>
-            <input type="number" placeholder="Enter Phone Number" name="phonenumber" id="phonenumber" required>
-
-            <label for="psw"><b>Passwork</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-            <hr>
-            <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
-            
-            <button style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" type="submit" class="registerbtn">Register</button>
-        </div>
-    </form>
-    </div>
-            
-    
+            function updateContactMethod() {
+                const contactMethod = document.getElementById("contact-method").value;
+                const message = document.getElementById("contact-message");
+        
+                if (contactMethod === "Email" || contactMethod === "SMS") {
+                    const isConfirmed = confirm(`Are You Sure You Want To Be Contacted Via ${contactMethod}?`);
+                    if (isConfirmed) {
+                        message.innerHTML = `You Prefer To Be Contacted Via ${contactMethod}.`;
+                    } else {
+                        document.getElementById("contact-method").value = "";
+                        message.innerHTML = "";
+                    }
+                } else {
+                    message.innerHTML = "";
+                }
+            }
+        </script>
     </body>
 </html>
+
