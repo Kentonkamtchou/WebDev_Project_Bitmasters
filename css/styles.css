@@ -20,7 +20,7 @@
     }
 
     .top-nav-bar a:hover {
-        background-color: rgb(58, 58, 58);
+        background-color: rgba(224, 146, 1, 0.814);
     }
 
 
@@ -173,7 +173,7 @@ input[type=text]:focus, input[type=password]:focus{
 }
 
 hr{
-    border: 1px solid #f1f1f1;
+    border: 1px solid #ed0202;
     margin-bottom: 25px;
 }
 
